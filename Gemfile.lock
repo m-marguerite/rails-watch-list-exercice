@@ -94,6 +94,11 @@ GEM
     bundler-audit (0.9.3)
       bundler (>= 1.2.0)
       thor (~> 1.0)
+    cloudinary (2.4.5)
+      faraday (>= 2.0.1, < 3.0.0)
+      faraday-follow_redirects (~> 0.5)
+      faraday-multipart (~> 1.0, >= 1.0.4)
+      ostruct
     concurrent-ruby (1.3.8)
     connection_pool (3.0.3)
     crass (1.0.8)
@@ -114,6 +119,16 @@ GEM
       tzinfo
     execjs (2.10.2)
       json (>= 2)
+    faraday (2.15.1)
+      faraday-net_http (>= 2.0, < 3.6)
+      json
+      logger
+    faraday-follow_redirects (0.5.0)
+      faraday (>= 1, < 3)
+    faraday-multipart (1.2.0)
+      multipart-post (~> 2.0)
+    faraday-net_http (3.5.0)
+      net-http (~> 0.5)
     ffi (1.17.4-aarch64-linux-gnu)
     ffi (1.17.4-aarch64-linux-musl)
     ffi (1.17.4-arm-linux-gnu)
@@ -179,6 +194,10 @@ GEM
       drb (~> 2.0)
       prism (>= 1.5, < 3)
     msgpack (1.8.7)
+    multipart-post (2.4.1)
+    net-http (0.10.0)
+      net-protocol (>= 0.3.0)
+      uri (>= 0.11.1)
     net-imap (0.6.8)
       date
       net-protocol
@@ -438,6 +457,7 @@ DEPENDENCIES
   bootstrap (~> 5.3)
   brakeman
   bundler-audit
+  cloudinary
   debug
   dotenv-rails
   font-awesome-sass (~> 6.1)

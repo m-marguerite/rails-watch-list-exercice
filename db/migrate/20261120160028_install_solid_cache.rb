@@ -1,5 +1,5 @@
-ActiveRecord::Schema[7.2].define(version: 1) do
-  create_table "solid_cache_entries", force: :cascade do |t|
+class InstallSolidCache < ActiveRecord::Migration[8.1]
+  def change
     t.binary "key", limit: 1024, null: false
     t.binary "value", limit: 536870912, null: false
     t.datetime "created_at", null: false
